@@ -1,5 +1,5 @@
 """
-WSGI config for drfGuideTutorial project.
+WSGI config for moviehub project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'drfGuideTutorial.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'moviehub.settings')
 
 application = get_wsgi_application()

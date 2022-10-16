@@ -61,6 +61,7 @@ def add_movie(request):
     Returns:
         response: <response object> [JSON]
     """
+    print(request.data)
     serialized_movie = MovieSerializer(data=request.data)
     if serialized_movie.is_valid():
         serialized_movie.save()

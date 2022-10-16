@@ -8,6 +8,7 @@ from .serializers import MovieSerializer
 # Create your views here.
 @api_view(['GET'])
 def list_movies(request):
+    
     """
     List Movies
     --------------

@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  movie_hub:
+    image: "moviehub"
+    build: .
+    container_name: "movie-hub"
+    env_file:
+      - ./moviehub/.env
+    ports:
+      - 8000:8000

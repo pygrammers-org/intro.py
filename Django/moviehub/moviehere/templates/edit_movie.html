@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{%block content%}
+    <div class="container mt-5">
+        <form method="post" action="/edit-movie/{{movie.id}}" class="w-50 text-center mx-auto ">
+          {%csrf_token%}
+          <div class="row mb-3">
+            <label class="col-sm-2 col-form-label" >Movie</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="moviename" value="{{movie.movie_name}}">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label  class="col-sm-2 col-form-label ">Director</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="director" value="{{movie.director_name}}">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">EDIT</button>
+        </form>
+   </div>
+{%endblock%}
